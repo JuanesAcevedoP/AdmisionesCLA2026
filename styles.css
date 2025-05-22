@@ -1,0 +1,172 @@
+/* General Body Styling */
+body {
+  font-family: 'Quicksand', sans-serif; /* Applied Quicksand to the entire body */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Header Styling */
+.header-bg {
+  background-color: #dc3545; /* Red as per the image */
+  color: white;
+}
+
+.header-bg h1 {
+  font-weight: 700; /* Use a bolder weight for headings with Quicksand */
+  font-size: 2.5rem;
+}
+
+.header-description {
+  font-size: 1.1rem;
+  font-weight: 400; /* Regular weight for descriptions */
+}
+
+/* Header Logo Styling */
+.header-logo {
+  max-height: 120px; /* Increased logo size slightly */
+  width: auto;
+  padding: 5px; /* Optional: add some padding around the logo if needed */
+  background-color: rgb(255, 255, 255); /* Optional: slight background for logo visibility */
+  border-radius: 5px; /* Optional: slightly rounded corners for the logo background */
+}
+
+/* Ensure the container inside the header centers its content on small screens */
+.header-bg .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .header-logo {
+    max-height: 70px; /* Smaller logo on very small screens */
+  }
+  .header-bg h1 {
+    font-size: 2rem; /* Adjust header font size on small screens */
+  }
+}
+
+
+/* Info Box Styling (INFORMACIÓN IMPORTANTE DEL PROCESO) */
+.info-box {
+  background-color: #17a2b8; /* Cyan-like color from the image */
+  color: white;
+  font-weight: 700; /* Bolder weight for emphasis */
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Green Buttons Styling */
+.btn-green {
+  background-color: #28a745; /* Green color from the image */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  font-weight: 700; /* Bolder for buttons */
+  text-decoration: none;
+  display: block; /* Make them block level to take full width of container */
+  margin-bottom: 10px; /* Spacing between buttons */
+}
+
+.btn-green:hover {
+  background-color: #218838; /* Darker green on hover */
+  color: white;
+}
+
+/* Image Container Styling (for the children image) */
+.img-container img {
+  border: 1px solid #dee2e6; /* Light border for the image */
+  padding: 5px;
+}
+
+/* Attention Text (Para el año 2026...) */
+.attention-text {
+  color: #dc3545; /* Red color from the image */
+  font-weight: 700; /* Bolder weight */
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Important Note Section (and Grades Info) */
+.note-important {
+  background-color: #ffc107; /* Yellow background for the note */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.05rem; /* Slightly reduced font size for the note */
+  line-height: 1.6;
+  color: #343a40; /* Dark text for readability */
+}
+
+.note-important strong {
+  color: #dc3545; /* Red for emphasis in the note */
+  font-weight: 700;
+}
+
+/* Facade Image Styling */
+.facade-img {
+  max-width: 250px; /* Adjust as needed for desired small size */
+  height: auto;
+  display: block; /* Ensures it takes up its own line and can be centered */
+  margin: 30px auto 0 auto; /* Centers the image and adds top margin */
+  border: 1px solid #dee2e6; /* Optional: add a border */
+  border-radius: 0.5rem; /* Optional: slightly rounded corners */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Optional: subtle shadow */
+}
+
+/* FAQ Section Styling */
+.faq-section {
+  background-color: #e6ffe6; /* Light green background as per image */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  color: #4a6d4e; /* Darker green for the title */
+  font-family: 'Quicksand', sans-serif; /* Apply Quicksand here too */
+  font-weight: 700; /* Bolder weight for FAQ title */
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-section .accordion-item {
+  border-color: #c8e6c9; /* Lighter border for accordion items */
+  margin-bottom: 10px; /* Spacing between accordion items */
+}
+
+.faq-section .accordion-button {
+  background-color: #f0fdf0; /* Very light green for button background */
+  color: #344c37; /* Dark green for button text */
+  font-weight: 600; /* Slightly bolder for question headers */
+  font-size: 1.1rem;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: #d4edda; /* Slightly darker green when open */
+  color: #215e21; /* Even darker green for text when open */
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.faq-section .accordion-body {
+  background-color: #f7fff7; /* Almost white for the body background */
+  color: #555; /* Slightly muted text color for answers */
+  line-height: 1.6;
+  font-weight: 400; /* Regular weight for answer text */
+}
+
+/* Custom arrow color for FAQ accordion to match green theme */
+.faq-section .accordion-button::after {
+  filter: brightness(0.5) sepia(1) hue-rotate(100deg) saturate(3);
+}
+.faq-section .accordion-button:not(.collapsed)::after {
+  filter: brightness(0.8) sepia(1) hue-rotate(100deg) saturate(3);
+}
+
+/* Specific styling for the Admission Steps Accordion buttons */
+#admissionStepsAccordion .accordion-button {
+    font-weight: 600; /* Make step titles slightly bolder */
+}
+
+#admissionStepsAccordion .accordion-body {
+    font-weight: 400; /* Regular weight for step descriptions */
+}
